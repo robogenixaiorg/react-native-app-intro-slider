@@ -237,8 +237,10 @@ export default class AppIntroSlider<ItemT = any> extends React.Component<
                 ),
               )}
           </View>
+          <View>
           {primaryButton}
           {secondaryButton}
+          </View>
         </SafeAreaView>
       </View>
     );
