@@ -97,8 +97,10 @@ class AppIntroSlider extends React.Component {
                         : this.props.dotStyle,
                 ]} onPress={() => this.goToSlide(i, true)}/>))}
           </react_native_1.View>
+          <react_native_1.View>
           {primaryButton}
           {secondaryButton}
+          </react_native_1.View>
         </react_native_1.SafeAreaView>
       </react_native_1.View>);
         };
@@ -174,9 +176,11 @@ const styles = react_native_1.StyleSheet.create({
     },
     paginationContainer: {
         position: 'absolute',
-        bottom: 16,
+        bottom: -30,
         left: 16,
         right: 16,
+        
+        
     },
     paginationDots: {
         height: 16,
@@ -184,6 +188,7 @@ const styles = react_native_1.StyleSheet.create({
         flexDirection: isAndroidRTL ? 'row-reverse' : 'row',
         justifyContent: 'center',
         alignItems: 'center',
+        paddingTop:100
     },
     dot: {
         width: 10,
